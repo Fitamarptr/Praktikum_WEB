@@ -1,0 +1,19 @@
+.regis{
+    border: 10px solid #387bc6;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(183, 217, 255);
+    margin: 100px;
+    
+}
+
+
+/* .regis{
+    text-align: left;
+    
+} */

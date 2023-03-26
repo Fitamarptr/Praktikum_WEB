@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Gambar/Logo 1.png">
+    <link rel="stylesheet" href = "../foldercss/beranda.css">
+    <link rel="stylesheet" href="../foldercss/tampil_data.css">
+    <title>Pendaftar</title>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="../folderhtml/beranda.html"><img src="../Gambar/Logo 1.png" width="25%"></a></div>
+        <div class="atas">            
+            <div class="home">
+                <ul>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="daftar.html">Daftar</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a id="logout" style="cursor: pointer;">Logout</a></li>
+                    <script src="../folderjs/logout.js"></script>
+                </ul>
+            </div>
+       </div>
+    </nav>
+
+    <h1>DATA PENDAFTAR</h1>
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<th>Nama Lengkap</th>
+					<th>Email</th>
+					<th>Alamat</th>
+					<th>Jenis Kelamin</th>
+					<th>Tanggal Lahir</th>
+					<th>Kategori</th>
+					<th>Hobi</th>
+                    <th>Masukan</th>
+				</tr>
+			</thead>
+			<tbody id="data-body">
+				
+			</tbody>
+		</table>
+	</section>
+
+	<script>
+		var data = JSON.parse(sessionStorage.getItem('data')) || [];
+
+		var dataBody = document.getElementById('data-body');
+		for (var i = 0; i < data.length; i++) {
+			var tr = document.createElement('tr');
+			tr.innerHTML = '<td>' + data[i]['Nama Lengkap'] + '</td>' +
+						'<td>' + data[i]['Email'] + '</td>' +
+						'<td>' + data[i]['Alamat'] + '</td>' +
+						'<td>' + data[i]['Jenis Kelamin'] + '</td>' +
+                        '<td>' + data[i]['Tanggal Lahir'] + '</td>' +
+                        '<td>' + data[i]['Kategori'] + '</td>' +
+						'<td>' + data[i]['Hobi'].join(', ') + '</td>'+
+                        '<td>' + data[i]['Masukan'] + '</td>' ;
+			dataBody.appendChild(tr);
+		}
+    </script>
+    
+</body>
+</html>

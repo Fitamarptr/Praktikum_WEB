@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+}
+.atas{
+    width: 100%;
+    margin: 0 auto;
+}
+.atas:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.logo{
+    padding-left: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+}
+
+.home{
+    float: right;
+}
+
+nav{
+    background-color: rgb(56, 173, 223);
+    color: blue;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    display: flex;
+    font-size: 16px;
+    top: 0;
+    z-index: 100;
+}
+nav ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: block;
+    float: right;
+    padding-top: 25px;
+    padding-right: 100px;
+}
+nav ul li a{
+    display: block;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 15px 20px 15px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.bg{
+    position: relative;
+    display: flex;
+}
+.daftar{
+    top: 30%;
+    left: 5%;
+    position: absolute;
+}
+
+section .kiri{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+section .kiri1{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.kiri {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Georgia;
+}
+h2 {
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 50px;
+    color: blueviolet;
+}
+section .kanan{
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.kanan {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Georgia;
+}
+
+footer{
+    background-color: rgb(222, 241, 252); 
+    position: absolute;
+    display: absolute;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px;   
+    padding-bottom: 20px;
+}
+
+.footer p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+}

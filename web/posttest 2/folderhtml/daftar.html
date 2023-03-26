@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="icon" href="../Gambar/Logo 1.png">
+    <link rel="stylesheet" href = "../foldercss/beranda.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="../folderhtml/beranda.html"><img src="../Gambar/Logo 1.png" width="25%"></a></div>
+        <div class="atas">            
+            <div class="home">
+                <ul>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="daftar.html">Daftar</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a id="logout" style="cursor: pointer;">Logout</a></li>
+                    <script src="../folderjs/logout.js"></script>
+                </ul>
+            </div>
+       </div>
+    </nav>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <h1> <br><center>DAFTAR MEMBER FiiT MUSIC STORE</center></h1> 
+        <link rel="stylesheet" type="text/css" href="../foldercss/daftar.css"> 
+        <br>
+        <br>
+        <br>
+        
+    </head>
+    <body>
+        <div class="container1">
+            <form id='form'>
+                <label for="nama">Nama Lengkap</label></center><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap anda">
+                <br>
+                <br>
+    
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan alamat email anda">
+                <br>
+                <br>
+    
+                <label for="alamat">Alamat</label><br>
+                <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap anda"></textarea>
+                <br>
+                <br>
+    
+                <label for="jenis_kelamin">Jenis Kelamin</label><br>
+                <select id="jenis_kelamin" name="jenis_kelamin">
+                    <option id="gender" name="gender" value="Laki-laki">Laki-laki</option>
+                    <option id="gender" name="gender" value="Perempuan">Perempuan</option>
+                </select>
+                <br>
+                <br>
+    
+                <label for="tgl_lahir">Tanggal Lahir</label><br>
+                <input type="date" id="tgl_lahir" name="tgl_lahir">
+                <br>
+                <br>
+
+                </select>
+                <label>Kategori Member : </label><br>
+                <label for="Golden">
+                <input type="radio" id="Golden" name="Kategori" value="Golden"> Golden
+                </label> 
+                <label for="Platinum">
+                <input type="radio" id="Platinum" name="Kategori" value="Platinum"> Platinum
+                </label>
+                <br>
+                <br>
+
+                <label for="">Hobi :</label><br>
+                <input type="checkbox" id='hobi' name="Hobi" value="Bernyanyi">Bernyanyi
+                <input type="checkbox" id='hobi' name="Hobi" value="Bermain Musik">Bermain Musik
+                <input type="checkbox" id='hobi' name="Hobi" value="Ngoding">Ngoding
+                <input type="checkbox" id='hobi' name="Hobi" value="Berenang">Berenang
+                <br><br>
+
+                <label for="Masukan">Masukan :</label>
+                <textarea rows="7" cols="40" id="masukan" name="masukan"></textarea><br>
+                <br>
+    
+                <button type="submit" id="kirim" class="btn">Daftar</button>
+                
+            </form>
+        </div>
+    </body>
+    <script src="../folderjs/daftar-form.js"></script>
+    </html>
+    
+
+    <footer class="footer">
+        <p>fitamar_ptr</p>
+        <p>Copyright - 2023</p>
+    </footer>
+    
+</body>
+</html>
